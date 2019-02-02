@@ -39,11 +39,16 @@ function removeChildren(elem) {
 
 function sumBlock() {
   removeChildren(parent);
-  for ( var i=0;i<blockValue.value;i++){
-    var div = document.createElement("div");
-    div.className="block__item";
-    parent.appendChild(div);
-  };
+  if(blockValue.value<1000){
+    for ( var i=0;i<blockValue.value;i++){
+      var div = document.createElement("div");
+      div.className="block__item";
+      parent.appendChild(div);
+    };
+  }
+  else {
+    alert("Введите число меньше 1000");
+  }
 };
 
 
