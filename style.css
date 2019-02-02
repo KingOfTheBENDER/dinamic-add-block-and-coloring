@@ -1,0 +1,63 @@
+
+.block{
+  display: flex;
+  flex-wrap: wrap;
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.block__item{
+  background-color: white;
+  border: 1px solid;
+  width: 200px;
+  padding: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+.button{
+  width: 1100px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.button__item{
+  margin-right: 50px;
+}
+
+.form{
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.form__item{
+  display:none;
+}
+
+.color-popup {
+  position: absolute;
+}
+
+.value-popup{
+  position: relative;
+  margin-left: 250px;
+}
+
+.modal-show{
+  display: block;
+}
+
+.black{
+  background-color: black;
+}
+
+.yellow{
+  background-color: yellow;
+}
+
+.red{
+  background-color: red;
+}
+
+.blue{
+  background-color: blue;
+}

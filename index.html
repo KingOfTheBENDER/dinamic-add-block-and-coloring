@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet">
+    <title>Test</title>
+</head>
+<body>
+  <main>
+    <div id="main-block" class="block">
+      <div class="block__item"></div>
+      <div class="block__item"></div>
+      <div class="block__item"></div>
+      <div class="block__item"></div>
+    </div>
+
+    <div class="button">
+      <button class="color-link button__item" type="button">Показать форму ввода цвета</button>
+      <button class="value-link button__item" type="button">Показать форму ввода количества блоков</button>
+    </div>
+    <div class="form">
+      <select class="form__item color-popup" id="color-selector">
+        <option disabled selected>Выбери цвет</option>
+        <option value="yellow">Yellow</option>
+        <option value="black">Black</option>
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+      </select>
+      <div class="form__item value-popup">
+        <input id="block-value" type="text" placeholder="блоков на экране" onchange="sumBlock()">
+      </div>
+    </div>
+  </main>
+<script src="script.js"></script>
+</body>
+</html>
