@@ -11,7 +11,6 @@ var blockValue=document.getElementById("block-value");
 var parent = document.getElementById("main-block");
 
 
-
 colorLink.addEventListener("click", function (evt) {
   evt.preventDefault();
   colorPopup.classList.toggle("modal-show");
@@ -27,15 +26,12 @@ valueLink.addEventListener("click", function (evt) {
 });
 
 
-
-
-
-
 function removeChildren(elem) {
   while (elem.lastChild) {
     elem.removeChild(elem.lastChild);
   };
 };
+
 
 function sumBlock() {
   removeChildren(parent);
@@ -60,6 +56,7 @@ parent.onclick = function(event) {
     target = target.parentNode;
   };
 };
+
 
 function highlight(node) {
   if (selectValue.selectedIndex==1){
